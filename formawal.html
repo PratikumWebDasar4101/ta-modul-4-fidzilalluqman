@@ -1,12 +1,48 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-	<title>Form Login</title>
+	<title>Form Awal</title>
 </head>
 <body>
-Login		:<input type="text" name="username">
-Password	:<input type="password" name="password">
-<input type="submit" name="login" value="Login">
-
+	<h1 align="center">Form Awal</h1>
+	<table border="1" align="center">
+		<form action="proses.php" method="POST" enctype="multipart/form-data">
+			<tr>
+				<th>Nama</th>
+				<td><input style="width: 98%" type="text" name="nama"></td>
+			</tr>
+			<tr>
+				<th>Upload Image</th>
+				<td><input type="file" name="filegambar" id="filegambar"></td>
+			</tr>
+			<tr>
+				<th>Hobby</th>
+				<td><input type="checkbox" name="hobby[]" value="Bermain musik"> Bermain musik<br>
+					<input type="checkbox" name="hobby[]" value="Olahraga"> Olahraga<br>
+					<input type="checkbox" name="hobby[]" value="Membaca"> Membaca<br>
+					<input type="checkbox" name="hobby[]" value="Menulis"> Menulis</td>
+			</tr>
+			<tr>
+				<th>Genre Film</th>
+				<td><input type="checkbox" name="genre_film[]" value="Horor"> Horor<br>
+					<input type="checkbox" name="genre_film[]" value="Action"> Action<br>
+					<input type="checkbox" name="genre_film[]" value="Anime"> Anime<br>
+					<input type="checkbox" name="genre_film[]" value="Thrille"> Thrille<br>
+					<input type="checkbox" name="genre_film[]" value="Animasi"> Animasi</td>
+			</tr>
+			<tr>
+				<th>Tempat Wisata</th>
+				<td><input type="checkbox" name="tempat_wisata[]" value="Bali"> Bali<br>
+				<input type="checkbox" name="tempat_wisata[]" value="RajaAmpat"> Raja Ampat<br>
+				<input type="checkbox" name="tempat_wisata[]" value="PulauDerawan"> Pulau Derawan<br>
+				<input type="checkbox" name="tempat_wisata[]" value="BangkaBelitung"> Bangka Belitung<br>
+				<input type="checkbox" name="tempat_wisata[]" value="LabuanBajo"> Labuan Bajo
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3"><input style="width: 100%" type="submit" name="submit" value="submit"><br></td>
+			</tr>
+		</form>
+	</table>
 </body>
 </html>
